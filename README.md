@@ -257,13 +257,26 @@ The system supports 8 election posts:
 
 ## Production Deployment
 
-1. Set `NODE_ENV=production` in backend `.env`
-2. Update `MONGODB_URI` with production database
-3. Set strong `JWT_SECRET`
-4. Update `CLIENT_URL` in backend `.env` with production frontend URL
-5. Build frontend: `npm run build`
-6. Serve frontend build files using a web server (nginx, etc.)
-7. Use PM2 or similar for backend process management
+### Quick Deployment
+For quick deployment instructions, see **[DEPLOYMENT_QUICK.md](./DEPLOYMENT_QUICK.md)**
+
+### Detailed Deployment Guide
+For comprehensive deployment instructions, see **[DEPLOYMENT.md](./DEPLOYMENT.md)**
+
+### Deployment Checklist
+Use **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** to ensure everything is configured correctly.
+
+### Recommended Platforms
+- **Backend**: [Render](https://render.com) (Free tier available)
+- **Frontend**: [Vercel](https://vercel.com) (Free tier available)
+- **Database**: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (Free tier available)
+
+### Quick Steps
+1. Deploy backend to Render (see DEPLOYMENT_QUICK.md)
+2. Deploy frontend to Vercel (see DEPLOYMENT_QUICK.md)
+3. Update environment variables
+4. Test deployment
+5. Create admin user
 
 ## License
 
